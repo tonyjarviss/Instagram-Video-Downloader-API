@@ -5,11 +5,11 @@ const app = express();
 const snapsave = require('./snapsave-downloader');
 const port = 3000;
 
-app.get('/get', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ message: 'Hello World!' });
 });
 
-app.get('/get', async (req, res) => {
+app.get('/terabox', async (req, res) => {
   try {
     const url = req.query.url;
 
