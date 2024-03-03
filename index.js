@@ -5,7 +5,7 @@ const app = express();
 const snapsave = require('./snapsave-downloader');
 const port = 3000;
 
-app.get('/', (req, res) => {
+app.get('/get', (req, res) => {
   res.json({ message: 'Hello World!' });
 });
 
